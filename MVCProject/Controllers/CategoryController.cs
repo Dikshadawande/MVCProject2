@@ -26,11 +26,11 @@ namespace MVCProject.Controllers {
             return View();
         }
         [HttpDelete]
-        public async Task<IActionResult> DeleteCategory(int id)
+        public async Task<IActionResult> DeleteCategory()
         {
-            var ab = _context.Categories.FirstOrDefault(x => x.CategoryId == id);
-             _context.Categories.Remove(ab);
-            _context.SaveChanges()
+            //var ab = _context.Categories.FirstOrDefault(x => x.CategoryId == id);
+            // _context.Categories.Remove(ab);
+           // _context.SaveChanges()
 ;
             return View();
         }

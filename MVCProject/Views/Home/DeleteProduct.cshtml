@@ -1,0 +1,26 @@
+﻿@model MVCProject.Models.Product
+
+@{
+    ViewData["Title"] = "DeleteProduct";
+}
+
+<h1>DeleteProduct</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+           
+            <h5>Enter Product Id</h5>
+        </dt>
+       
+    </dl>
+    
+    <form asp-action="DeleteProduct">
+        <input type="number" asp-for="ProductId"  placeholder="Delete" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
